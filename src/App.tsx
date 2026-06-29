@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { BuilderProvider } from './context/BuilderContext';
-import { SidebarStats } from './components/SidebarStats';
-import { TabsContent } from './components/TabsContent';
-import { OptimizationAdvisor } from './components/OptimizationAdvisor';
+import { SidebarStats } from './components/shared/organisms/SidebarStats';
+import { TabsContent } from './features/builder/builder.page';
+import { OptimizationAdvisor } from './components/shared/organisms/OptimizationAdvisor';
 import { Swords } from 'lucide-react';
 
 const TABS = [
@@ -97,9 +96,5 @@ function BuilderApp() {
 }
 
 export default function App() {
-  return (
-    <BuilderProvider>
-      <BuilderApp />
-    </BuilderProvider>
-  );
+  return <BuilderApp />;
 }

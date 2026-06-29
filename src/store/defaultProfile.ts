@@ -1,0 +1,36 @@
+import type { PlayerProfile } from '../types/game';
+
+export const DEFAULT_PROFILE: PlayerProfile = {
+  heroId: 'ranger',
+  heroLevel: 10,
+  heroAwakenStars: 0,
+  ascensionLevel: 0,
+  equippedSkills: ['fireball', 'slash', 'crit_focus'],
+  skillLevels: { fireball: 1, slash: 1, crit_focus: 1 },
+  equippedGear: {
+    weapon: { id: 'Espada de Hierro', rarity: 'common', level: 1 },
+    armor: { id: 'Armadura de Placas', rarity: 'common', level: 1 },
+    ring: null,
+    amulet: null,
+  },
+  masteryLevels: {},
+  relicLevels: {},
+  traits: [
+    { id: 't0', grade: 'None', statType: 'None', value: 0, locked: false },
+    { id: 't1', grade: 'None', statType: 'None', value: 0, locked: false },
+    { id: 't2', grade: 'None', statType: 'None', value: 0, locked: false },
+    { id: 't3', grade: 'None', statType: 'None', value: 0, locked: false },
+    { id: 't4', grade: 'None', statType: 'None', value: 0, locked: false },
+  ],
+  petLevels: {},
+  equippedPets: [],
+  activePotions: [],
+  unlockedZodiacNodes: [],
+  currentStage: 1,
+  goldOwned: 50000,
+  gemsOwned: 2000,
+  masteryPointsOwned: 15,
+  relicShardsOwned: 100,
+  starPointsOwned: 5,
+  elixirOwned: 80,
+};
